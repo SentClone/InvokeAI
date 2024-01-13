@@ -14,7 +14,8 @@ from invokeai.app.services.image_records.image_records_common import ImageCatego
 from invokeai.backend.image_util.realesrgan.realesrgan import RealESRGAN
 from invokeai.backend.util.devices import choose_torch_device
 
-from .baseinvocation import BaseInvocation, InputField, InvocationContext, WithMetadata, invocation
+from .baseinvocation import BaseInvocation, InvocationContext, invocation
+from .fields import InputField, WithMetadata
 
 # TODO: Populate this from disk?
 # TODO: Use model manager to load?
